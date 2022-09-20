@@ -1,0 +1,350 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    width: 100%;
+    overflow-x: hidden; 
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: hsl(240, 78%, 98%);
+    background-image: url(images/bg-top.svg), url(images/bg-bottom.svg);
+    background-position: right top, left bottom;
+    background-repeat: no-repeat;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.pricing h1 {
+    color: hsl(233, 13%, 49%);
+}
+
+.pricing .toggle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing .toggle span {
+    color: hsl(234, 14%, 74%);
+    font-size: 15px;
+}
+
+input {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 1px solid;
+    border-radius: 1rem;
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: #FFF;
+    font-family: arial;
+    position: relative;
+    margin: 0 1.4rem;
+}
+
+.circle {
+    height: 22px;
+    width: 22px;
+    overflow: hidden;
+    background: hsl(0, 0%, 100%);
+    border-radius: 50%;
+    position: absolute;
+    transition: 0.3s ease;
+    transform: translate(17px, 0px);
+    cursor: pointer;
+    box-shadow: rgb(0 0 0 / 25%) 0px 0px 10px;
+}
+
+.annual {
+    transform: translate(-12px, 0px);
+}
+
+.plans {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Basic */
+
+.plans .basic {
+    max-width: 335px;
+    max-height: 370px;
+    background-color: white;
+    text-align: center;
+    color: hsl(232, 13%, 33%);
+    box-shadow: rgb(0 0 0 / 10%) -6px 6px 24px;
+    border-radius: 7px;
+}
+
+.plans .basic .text {
+    margin: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.plans .basic .text h2 {
+    font-size: 15px;
+}
+
+.plans .basic .text .price {
+    font-size: 4em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.plans .basic .text .price .money-one {
+    font-size: 1em;
+}
+
+.plans .basic .text .price span {
+    font-size: 0.5em;
+    margin-right: 5px;
+}
+
+.plans .basic .text .info {
+    font-size: 13px;
+}
+
+.plans .basic .text .info p {
+    border-bottom: 1px solid hsl(234deg 14% 74% / 70%);
+    padding-bottom: 14px;
+    width: 15rem;
+}
+
+.plans .basic .text .info p:first-of-type {
+    border-top: 1px solid hsl(234deg 14% 74% / 70%);
+    padding-top: 14px;
+    width: 15rem;
+}
+
+.plans .basic button {
+    border: none;
+    border-radius: 7px;
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 12px 75px;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.plans .basic button:focus {
+    color: hsl(237, 63%, 64%);
+    background-image: none;
+    border: 1px solid hsl(237, 63%, 64%);
+}
+
+/* Pro */
+
+.plans .pro {
+    max-width: 335px;
+    max-height: 410px;
+    height: 410px;
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(0 0 0 / 10%) -6px 6px 24px;
+    border-radius: 7px;
+}
+
+.plans .pro .text {
+    margin: 1rem 3rem;
+    margin-top: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.plans .pro .text h2 {
+    font-size: 15px;
+}
+
+.plans .pro .text .price {
+    font-size: 4em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.plans .pro .text .price .money-two {
+    font-size: 1em;
+}
+
+.plans .pro .text .price span {
+    font-size: 0.5em;
+    margin-right: 5px;
+}
+
+.plans .pro .text .info {
+    font-size: 13px;
+}
+
+.plans .pro .text .info p {
+    border-bottom: 1px solid hsl(234deg 14% 74% / 70%);
+    padding-bottom: 14px;
+    width: 15rem;
+}
+
+.plans .pro .text .info p:first-of-type {
+    border-top: 1px solid hsl(234deg 14% 74% / 70%);
+    padding-top: 14px;
+    width: 15rem;
+}
+
+.plans .pro button {
+    border: none;
+    border-radius: 7px;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(237, 63%, 64%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 12px 75px;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.plans .pro button:focus {
+    color: hsl(0, 0%, 100%);
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    border: 1px solid hsl(0, 0%, 100%);
+}
+/* Master */
+
+.plans .master {
+    max-width: 335px;
+    max-height: 370px;
+    background-color: white;
+    text-align: center;
+    color: hsl(232, 13%, 33%);
+    box-shadow: rgb(0 0 0 / 10%) 6px 6px 24px;
+    border-radius: 7px;
+}
+
+.plans .master .text {
+    margin: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.plans .master .text h2 {
+    font-size: 15px;
+}
+
+.plans .master .text .price {
+    font-size: 4em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.plans .master .text .price .money-three {
+    font-size: 1em;
+}
+
+.plans .master .text .price span {
+    font-size: 0.5em;
+    margin-right: 5px;
+}
+
+.plans .master .text .info {
+    font-size: 13px;
+}
+
+.plans .master .text .info p {
+    border-bottom: 1px solid hsl(234deg 14% 74% / 70%);
+    padding-bottom: 14px;
+    width: 15rem;
+}
+
+.plans .master .text .info p:first-of-type {
+    border-top: 1px solid hsl(234deg 14% 74% / 70%);
+    padding-top: 14px;
+    width: 15rem;
+}
+
+.plans .master button {
+    border: none;
+    border-radius: 7px;
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 12px 75px;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.plans .master button:focus {
+    color: hsl(237, 63%, 64%);
+    background-image: none;
+    border: 1px solid hsl(237, 63%, 64%);
+}
+
+@media (max-width: 767px) {
+    main {
+        max-width: 100%;
+        min-width:375px;
+    }
+
+    .pricing {
+        margin-top: 3rem;
+    }
+
+    .plans {
+        flex-direction: column;
+        margin-bottom: 3rem;
+    }
+
+    .plans .pro {
+        margin: 2rem 0;
+        max-height: 370px;
+        height: 370px;
+    }
+
+    .plans .pro .text {
+        margin-top: 1rem;
+    }
+
+    .plans .master {
+        box-shadow: rgb(0 0 0 / 10%) -6px 6px 24px;
+    }
+}
